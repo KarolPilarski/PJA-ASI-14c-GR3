@@ -1,8 +1,11 @@
 import pandas as pd
 
+
 def load_dataset():
     print('Loading dataset...')
 
     dataset = pd.read_csv('dataset/tortilla_prices_raw.csv')
-    return dataset
 
+    print(dataset.head())
+
+    return dataset
