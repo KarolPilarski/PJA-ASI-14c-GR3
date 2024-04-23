@@ -1,4 +1,4 @@
-from load_dataset import load_dataset
+from load_dataset import load_csv_dataset
 from prepare_data import prepare_data
 from evaluate_data import evaluate_data
 from split_data import split_data
@@ -7,7 +7,7 @@ from evaluate_model import evaluate_model
 
 
 def main():
-    df = load_dataset()
+    df = load_csv_dataset('dataset/tortilla_prices_raw.csv')
 
     df = prepare_data(df)
 

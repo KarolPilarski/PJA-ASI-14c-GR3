@@ -1,6 +1,9 @@
 from sklearn.preprocessing import LabelEncoder
+import pandas as pd
+import string
 
-def prepare_data(df):
+
+def prepare_data(df: pd.DataFrame):
     print('Preparing data...')
 
     df = remove_na(df, 'Price per kilogram')
@@ -10,7 +13,7 @@ def prepare_data(df):
     return df
 
 
-def remove_na(df, column):
+def remove_na(df: pd.DataFrame, column):
     print("\nColumn \t\tnull count")
     print("--------------------------")
     print(df.isnull().sum())
@@ -18,7 +21,7 @@ def remove_na(df, column):
     return df.dropna(subset=[column])
 
 
-def remove_invalid_entries(df, column):
+def remove_invalid_entries(df: pd.DataFrame, column: string):
     print(df[df[column] <= 0])
 
     df.drop(df.index[df[column] == 0], inplace=True)
@@ -26,7 +29,7 @@ def remove_invalid_entries(df, column):
     return df
 
 
-def encode(df):
+def encode(df: pd.DataFrame):
     encoder = LabelEncoder()
     df['State'] = encoder.fit_transform(df['State'])
     df['City'] = encoder.fit_transform(df['City'])
