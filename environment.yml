@@ -3,19 +3,73 @@ channels:
   - defaults
   - conda-forge
 dependencies:
+  - brotli=1.1.0=hcfcfb64_1
+  - brotli-bin=1.1.0=hcfcfb64_1
   - bzip2=1.0.8=h2bbff1b_5
   - ca-certificates=2024.3.11=haa95532_0
+  - certifi=2024.2.2=py310haa95532_0
+  - contourpy=1.2.1=py310h232114e_0
+  - cycler=0.12.1=pyhd8ed1ab_0
+  - fonttools=4.51.0=py310h8d17308_0
+  - freetype=2.12.1=ha860e81_0
+  - intel-openmp=2024.1.0=h57928b3_965
+  - joblib=1.4.0=py310haa95532_0
+  - jpeg=9e=hcfcfb64_3
+  - kiwisolver=1.4.5=py310h232114e_1
+  - lcms2=2.15=ha5c8aab_0
+  - lerc=3.0=h0e60522_0
+  - libblas=3.9.0=22_win64_mkl
+  - libbrotlicommon=1.1.0=hcfcfb64_1
+  - libbrotlidec=1.1.0=hcfcfb64_1
+  - libbrotlienc=1.1.0=hcfcfb64_1
+  - libcblas=3.9.0=22_win64_mkl
+  - libdeflate=1.17=hcfcfb64_0
   - libffi=3.4.4=hd77b12b_0
-  - openssl=3.0.13=h2bbff1b_0
+  - libhwloc=2.9.1=h51c2c0f_0
+  - libiconv=1.17=hcfcfb64_2
+  - liblapack=3.9.0=22_win64_mkl
+  - libpng=1.6.37=h1d00b33_2
+  - libtiff=4.5.1=hd77b12b_0
+  - libwebp-base=1.4.0=hcfcfb64_0
+  - libxml2=2.10.4=h0ad7f3c_2
+  - lz4-c=1.9.4=hcfcfb64_0
+  - matplotlib-base=3.8.4=py310hc9baf74_0
+  - mkl=2024.1.0=h66d3029_692
+  - munkres=1.1.4=pyh9f0ad1d_0
+  - numpy=1.26.4=py310hf667824_0
+  - openjpeg=2.4.0=h4fc8c34_0
+  - openssl=3.2.1=hcfcfb64_1
+  - packaging=24.0=pyhd8ed1ab_0
+  - pandas=2.2.2=py310hecd3228_0
+  - patsy=0.5.6=pyhd8ed1ab_0
+  - pillow=10.3.0=py310h2bbff1b_0
   - pip=23.3.1=py310haa95532_0
+  - pthreads-win32=2.9.1=hfa6e2cd_3
+  - pyparsing=3.1.2=pyhd8ed1ab_0
   - python=3.10.14=he1021f5_0
+  - python-dateutil=2.9.0=pyhd8ed1ab_0
+  - python-tzdata=2024.1=pyhd8ed1ab_0
+  - python_abi=3.10=2_cp310
+  - pytz=2024.1=pyhd8ed1ab_0
+  - scikit-learn=1.4.2=py310h4ed8f06_1
+  - scipy=1.13.0=py310hf667824_0
+  - seaborn=0.13.2=hd8ed1ab_0
+  - seaborn-base=0.13.2=pyhd8ed1ab_0
   - setuptools=68.2.2=py310haa95532_0
+  - six=1.16.0=pyh6c4a22f_0
   - sqlite=3.41.2=h2bbff1b_0
+  - statsmodels=0.14.1=py310h3e78b6c_0
+  - tbb=2021.9.0=h91493d7_0
+  - threadpoolctl=2.2.0=pyh0d69192_0
   - tk=8.6.12=h2bbff1b_0
   - tzdata=2024a=h04d1e81_0
+  - ucrt=10.0.22621.0=h57928b3_0
+  - unicodedata2=15.1.0=py310h8d17308_0
   - vc=14.2=h21ff451_1
-  - vs2015_runtime=14.27.29016=h5e58377_2
+  - vc14_runtime=14.38.33130=h82b7239_18
+  - vs2015_runtime=14.38.33130=hcb4865c_18
   - wheel=0.41.2=py310haa95532_0
   - xz=5.4.6=h8cc25b3_0
   - zlib=1.2.13=h8cc25b3_0
+  - zstd=1.5.5=hd43e919_0
 prefix: D:\Programy\anaconda3\envs\tortilla-prices
