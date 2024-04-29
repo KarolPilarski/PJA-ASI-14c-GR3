@@ -1,6 +1,6 @@
 from kedro.pipeline import Pipeline, node, pipeline
 
-from .nodes import prepare_data, remove_na, remove_invalid_entries, encode
+from .nodes import remove_na, remove_invalid_entries, encode
 
 
 def create_pipeline(**kwargs) -> Pipeline:
