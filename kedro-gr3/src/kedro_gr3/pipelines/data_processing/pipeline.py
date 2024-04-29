@@ -6,18 +6,6 @@ from .nodes import remove_na, remove_invalid_entries, encode, evaluate_data
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline(
         [
-            # node(
-            #     func=load_csv_dataset,
-            #     inputs="file",
-            #     outputs="preprocessed_companies",
-            #     name="preprocess_companies_node",
-            # ),
-            # node(
-            #     func=prepare_data,
-            #     inputs="torillas",
-            #     outputs="prepared_data",
-            #     name="prepare_data_node",
-            # ),
             node(
                 func=remove_na,
                 inputs=["torillas", "params:column"],

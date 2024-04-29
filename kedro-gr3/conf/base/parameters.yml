@@ -1,1 +1,4 @@
 column: "Price per kilogram"
+test_size: 0.15
+val_size: 0.176
+random_state: 42
