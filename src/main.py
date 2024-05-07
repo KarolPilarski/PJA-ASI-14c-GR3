@@ -13,7 +13,7 @@ def main():
 
     evaluate_data(df)
 
-    X_train, X_test, y_train, y_test = split_data(df, 0.15, 42)
+    X_train, X_test, X_val, y_train, y_test, y_val = split_data(df, 0.15, 42)
 
     model = train_model(X_train, y_train)
 
