@@ -8,13 +8,13 @@ def create_pipeline(**kwargs) -> Pipeline:
         [
             node(
                 func=remove_na,
-                inputs=["torillas", "params:column"],
+                inputs=["torillas", "params:predicted_column"],
                 outputs="removed_na_data",
                 name="remove_na_node",
             ),
             node(
                 func=remove_invalid_entries,
-                inputs=["removed_na_data", "params:column"],
+                inputs=["removed_na_data", "params:predicted_column"],
                 outputs="invalid_entries_removed_data",
                 name="remove_invalid_entries_node",
             ),

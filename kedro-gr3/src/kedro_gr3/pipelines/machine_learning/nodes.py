@@ -6,13 +6,13 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 
-def split_data(df: pd.DataFrame, test_size: float, val_size: float, random_state: int, column: string) -> Tuple[
+def split_data(df: pd.DataFrame, test_size: float, val_size: float, random_state: int, predicted_column: string) -> Tuple[
     pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Series, pd.Series, pd.Series]:
     print("Splitting data into train and test sets...")
 
     X_train, X_test, y_train, y_test = train_test_split(
-        df.drop(column, axis=1),
-        df[column],
+        df.drop(predicted_column, axis=1),
+        df[predicted_column],
         test_size=test_size,
         random_state=random_state
     )
