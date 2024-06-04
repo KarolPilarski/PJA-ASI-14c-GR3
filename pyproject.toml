@@ -3,15 +3,15 @@ requires = [ "setuptools",]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kedro_gr3"
+name = "PJA-ASI-14c-GR3"
 readme = "README.md"
 dynamic = [ "dependencies", "version",]
 
 [project.scripts]
-kedro-gr3 = "kedro_gr3.__main__:main"
+kedro-gr3 = "PJA-ASI-14c-GR3.__main__:main"
 
 [tool.kedro]
-package_name = "kedro_gr3"
+package_name = "PJA-ASI-14c-GR3"
 project_name = "kedro-gr3"
 kedro_init_version = "0.19.5"
 tools = [ "Kedro Viz",]
@@ -24,7 +24,7 @@ source_dir = "src"
 file = "requirements.txt"
 
 [tool.setuptools.dynamic.version]
-attr = "kedro_gr3.__version__"
+attr = "PJA-ASI-14c-GR3.__version__"
 
 [tool.setuptools.packages.find]
 where = [ "src",]

@@ -1,5 +1,5 @@
 """kedro-gr3 file for ensuring the package is executable
-as `kedro-gr3` and `python -m kedro_gr3`
+as `kedro-gr3` and `python -m PJA-ASI-14c-GR3`
 """
 import importlib
 from pathlib import Path
