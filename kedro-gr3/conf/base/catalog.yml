@@ -1,3 +1,0 @@
-torillas:
-  type: pandas.CSVDataset
-  filepath: data/01_raw/tortilla_prices_raw.csv

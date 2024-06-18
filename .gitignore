@@ -160,7 +160,7 @@ cython_debug/
 #.idea/
 
 # Kedro
-kedro-gr3/session_store.db
+session_store.db
 kedro-gr3/stats.json
 
 # Weights & Biases
