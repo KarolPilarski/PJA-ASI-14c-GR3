@@ -18,7 +18,7 @@ ARG KEDRO_UID=999
 ARG KEDRO_GID=0
 COPY --chown=${KEDRO_UID}:${KEDRO_GID} . .
 RUN apt-get update -y && apt-get install -y gcc
-RUN pip install --no-cache-dir -r requirements.txt && rm -f requirements.txt
+RUN pip install --no-cache-dir -r environment.yml&& rm -f environment.yml
 EXPOSE 8888
 
 CMD ["kedro", "run"]
