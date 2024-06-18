@@ -35,7 +35,7 @@ Docker Setup
 
     1. Download Docker Desktop from the official website and install it on your system with the default settings.
     2. Launch Docker Desktop.
-    4. Clone our repository with git clone https://github.com/KarolPilarski/PJA-ASI-14c-GR3.git .
-    3. To run the application in a container, use the command in command in directory of git project 'docker-compose up'
+    3. Clone our repository with git clone https://github.com/KarolPilarski/PJA-ASI-14c-GR3.git .
+    4. To run the application in a container, use the command in directory of git project 'docker-compose up'
 
 
