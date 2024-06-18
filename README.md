@@ -13,7 +13,7 @@ Contributors
     Download and install Miniconda
     Download file environment.yml from catalog env
     In terminal use command conda env create -f environment.yml
-    Activate created environment using command conda activate ASI
+    Activate created environment using command conda activate tortilla-prices
     
 Tortilla Price Prediction Model
 
