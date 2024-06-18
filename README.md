@@ -1,4 +1,3 @@
-# PJA-ASI-14c-GR3
 
 
 Contributors
@@ -37,5 +36,7 @@ Docker Setup
     2. Launch Docker Desktop.
     3. Clone our repository with git clone https://github.com/KarolPilarski/PJA-ASI-14c-GR3.git .
     4. To run the application in a container, use the command in directory of git project 'docker-compose up'
+
+
 
 
