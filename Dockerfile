@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 
-COPY requirements.txt /tmp/requirements.txt
+COPY environment.yml /tmp/environment.yml
 RUN python -m pip install --upgrade pip
 
 ARG KEDRO_UID=999
