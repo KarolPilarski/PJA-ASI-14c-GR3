@@ -161,8 +161,8 @@ cython_debug/
 
 # Kedro
 session_store.db
-kedro-gr3/stats.json
+stats.json
 
 # Weights & Biases
-kedro-gr3/wandb/run*
+wandb/run*
 
