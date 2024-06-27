@@ -23,9 +23,13 @@ In order to get the best out of the template:
  Kedro
 
     pip install -r requirements.txt
-    kedro new --name=spaceflights
+    kedro new --name=kedro
     kedro run --from-inputs aug_train
     kedro viz
+    
+How to run your Kedro pipeline
+
+    kedro run --pipeline="manual_ml" -params="random_state=2137"
     
 Tortilla Price Prediction Model
 The model described here will be able to predict the price of tortillas (expressed in Mexican pesos per kilogram)
