@@ -15,5 +15,6 @@ def register_pipelines() -> Dict[str, Pipeline]:
       "data_processing": data_processing_pipeline,
       "machine_learning": machine_learning_pipeline,
       "auto_ml": auto_ml_pipeline,
+      "manual_ml": data_processing_pipeline + machine_learning_pipeline,
       "__default__": data_processing_pipeline + machine_learning_pipeline + auto_ml_pipeline
   }
