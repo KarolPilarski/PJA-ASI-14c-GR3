@@ -49,7 +49,7 @@ def display_correlation_matrix(df: pd.DataFrame):
     corr_matrix = numeric_df.corr()
 
     sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap='coolwarm')
-    plt.title('Macierz korelacji')
+    plt.title('Correlation matrix')
     plt.show()
 
 
