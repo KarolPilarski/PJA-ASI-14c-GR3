@@ -5,6 +5,8 @@ import string
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import wandb
+import numpy as np
+import matplotlib.pyplot as plt
 
 def split_data(df: pd.DataFrame, split_params: dict, random_state: int, predicted_column: string) -> Tuple[
     pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Series, pd.Series, pd.Series]:
@@ -60,6 +62,20 @@ def evaluate_model(model: RandomForestRegressor, X_test: pd.DataFrame, y_test: p
     print('Mean Absolute Error:', mae)
     print('Mean Squared Error:', mse)
     print('R2 Score:', r2)
+
+    print('\nFeature importances', model.feature_importances_, '\n')
+    for name, importance in zip(X_test.columns.values, model.feature_importances_):
+        print(name, "=", importance)
+    
+    features = X_test.columns.values
+    importances = model.feature_importances_
+    indices = np.argsort(importances)
+
+    plt.title('Feature Importances')
+    plt.barh(range(len(indices)), importances[indices], color='g', align='center')
+    plt.yticks(range(len(indices)), [features[i] for i in indices])
+    plt.xlabel('Relative Importance')
+    plt.show()
 
     wandb.finish()
 
