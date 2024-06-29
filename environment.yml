@@ -9,6 +9,7 @@ dependencies:
   - aiohttp=3.9.5=py310h2bbff1b_0
   - aiohttp-cors=0.7.0=pyhd3eb1b0_0
   - aiosignal=1.2.0=pyhd3eb1b0_0
+  - annotated-types=0.6.0=py310haa95532_0
   - antlr-python-runtime=4.9.3=pyhd8ed1ab_1
   - appdirs=1.4.4=pyh9f0ad1d_0
   - arrow=1.3.0=pyhd8ed1ab_0
@@ -103,7 +104,7 @@ dependencies:
   - gitpython=3.1.43=pyhd8ed1ab_0
   - glib=2.78.4=hd77b12b_0
   - glib-tools=2.78.4=hd77b12b_0
-  - gluonts=0.14.3=pyhd8ed1ab_0
+  - gluonts=0.14.3=py310haa95532_0
   - google-api-core=2.10.1=py310haa95532_0
   - google-auth=2.29.0=py310haa95532_0
   - google-auth-oauthlib=0.4.4=pyhd3eb1b0_0
@@ -176,7 +177,7 @@ dependencies:
   - libxml2=2.10.4=h0ad7f3c_2
   - libzlib=1.2.13=h2466b09_6
   - lightgbm=4.3.0=py310h5da7b33_0
-  - lightning=2.3.0=pyhd8ed1ab_0
+  - lightning=2.1.4=pyhd8ed1ab_0
   - lightning-utilities=0.9.0=py310haa95532_0
   - llvmlite=0.42.0=py310hf2fb9eb_0
   - locket=1.0.0=py310haa95532_0
@@ -227,6 +228,7 @@ dependencies:
   - pixman=0.40.0=h2bbff1b_1
   - pluggy=1.3.0=pyhd8ed1ab_0
   - ply=3.11=py310haa95532_0
+  - pooch=1.4.0=pyhd3eb1b0_0
   - poppler=22.12.0=h268424c_0
   - poppler-data=0.4.11=haa95532_1
   - pre-commit-hooks=4.6.0=pyhd8ed1ab_0
@@ -261,7 +263,7 @@ dependencies:
   - python_abi=3.10=2_cp310
   - pytoolconfig=1.2.5=pyhd8ed1ab_0
   - pytorch=2.3.0=cpu_py310h9432977_0
-  - pytorch-lightning=2.3.0=pyhd8ed1ab_0
+  - pytorch-lightning=2.1.4=pyhd8ed1ab_0
   - pytorch-metric-learning=2.3.0=pyhd8ed1ab_0
   - pytz=2024.1=pyhd8ed1ab_0
   - pywavelets=1.5.0=py310h9128911_0
@@ -286,7 +288,7 @@ dependencies:
   - safetensors=0.4.2=py310h0010962_0
   - scikit-image=0.20.0=py310h3513d60_0
   - scikit-learn=1.4.2=py310h4ed8f06_1
-  - scipy=1.12.0=py310h8640f81_0
+  - scipy=1.10.1=py310h309d312_1
   - seaborn=0.13.2=hd8ed1ab_0
   - seaborn-base=0.13.2=pyhd8ed1ab_0
   - sentencepiece=0.1.99=py310h59b6b97_0
@@ -363,7 +365,6 @@ dependencies:
   - zstd=1.5.5=hd43e919_0
   - pip:
       - aiofiles==23.2.1
-      - annotated-types==0.6.0
       - anyio==3.7.1
       - asttokens==2.4.1
       - click-default-group==1.2.4
